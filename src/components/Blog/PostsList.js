@@ -13,7 +13,6 @@ function PostsList(){
   
   useEffect(() => {
     fetchPosts();
-    console.log(posts);
   })
   
   async function deletePost({id}){

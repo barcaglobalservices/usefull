@@ -25,6 +25,7 @@ function CreatePost(){
   }
   
   async function submitPost(){
+      console.log(formData);
       setFormData({...formData, 'content': value})
       console.log(formData);
     try {
