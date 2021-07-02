@@ -25,9 +25,7 @@ function CreatePost(){
   }
   
   async function submitPost(){
-      console.log(formData);
       setFormData({...formData, 'content': value})
-      console.log(formData);
     try {
         if (!formData.title && !formData.blogID && !formData.content) return
         await API.graphql(graphqlOperation(createPost, {input: formData}))
