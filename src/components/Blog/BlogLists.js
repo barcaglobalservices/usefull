@@ -34,9 +34,9 @@ function BlogLists(){
   return (<>
     { blogs.map(blog => (
             <div key={blog.id}>
-              {blog.name}  {blog.id}
+              {blog.name} 
               <button onClick={ () => deleteBlog(blog)}>
-                DeleteBlog
+               X
               </button>
             </div>
           ))

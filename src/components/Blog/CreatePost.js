@@ -47,8 +47,7 @@ function CreatePost(){
              ))}
           </select>
           <input type="input" placeholder="title" value={formData.title} onChange={e => setFormData({ ...formData, 'title': e.target.value})}/>
-          <input type="input" placeholder="content" value={formData.content} onChange={e => setFormData({ ...formData, 'content': e.target.value})}/>
-         
+          
           <ReactQuill theme="snow" value={value} onChange={setValue}/>
          
           <button onClick={submitPost}>

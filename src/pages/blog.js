@@ -11,7 +11,8 @@ function Blog() {
     
     return (
         <>
-        <div>
+    <div className="container">
+    <div>
             <CreateBlog />
         </div>
         <div>
@@ -24,6 +25,8 @@ function Blog() {
         <div>
             <PostList />
         </div>
+    </div>
+       
         </>
     );
 }

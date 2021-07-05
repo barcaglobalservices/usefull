@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { API, graphqlOperation } from 'aws-amplify';
 import { listPosts } from '../../graphql/queries';
+import Moment from 'react-moment';
+
+
 import { deletePost as DeletePostMutation } from '../../graphql/mutations';
 //create component for adding a blog post. 
 //create components for listing blog posts. 
@@ -36,9 +39,10 @@ function PostsList(){
     { posts.map(post => (
             <div key={post.id}>
               <h1>{post.title}</h1>
-              <p>
-                {post.content}
-              </p>
+              <em><Moment fromNow>
+              {post.createdAt}
+                </Moment></em>
+              <div dangerouslySetInnerHTML={{ __html: post.content }} ></div>
               
               <button onClick={() => deletePost(post)}>
                   deletePost

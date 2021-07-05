@@ -6,7 +6,6 @@ import { createBlog } from '../../graphql/mutations';
 const initialForm = {name: ""};
 
 function CreateBlog(){
-  const [blogs, setBlogs] = useState([])
   const [formData, setFormData] = useState(initialForm);
 
   

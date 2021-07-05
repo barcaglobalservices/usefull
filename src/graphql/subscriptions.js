@@ -10,6 +10,7 @@ export const onCreateBlog = /* GraphQL */ `
         items {
           id
           title
+          owner
           content
           blogID
           createdAt
@@ -31,6 +32,7 @@ export const onUpdateBlog = /* GraphQL */ `
         items {
           id
           title
+          owner
           content
           blogID
           createdAt
@@ -52,6 +54,7 @@ export const onDeleteBlog = /* GraphQL */ `
         items {
           id
           title
+          owner
           content
           blogID
           createdAt
@@ -69,6 +72,7 @@ export const onCreatePost = /* GraphQL */ `
     onCreatePost {
       id
       title
+      owner
       content
       blogID
       blog {
@@ -100,6 +104,7 @@ export const onUpdatePost = /* GraphQL */ `
     onUpdatePost {
       id
       title
+      owner
       content
       blogID
       blog {
@@ -131,6 +136,7 @@ export const onDeletePost = /* GraphQL */ `
     onDeletePost {
       id
       title
+      owner
       content
       blogID
       blog {
@@ -165,6 +171,7 @@ export const onCreateComment = /* GraphQL */ `
       post {
         id
         title
+        owner
         content
         blogID
         blog {
@@ -193,6 +200,7 @@ export const onUpdateComment = /* GraphQL */ `
       post {
         id
         title
+        owner
         content
         blogID
         blog {
@@ -221,6 +229,7 @@ export const onDeleteComment = /* GraphQL */ `
       post {
         id
         title
+        owner
         content
         blogID
         blog {

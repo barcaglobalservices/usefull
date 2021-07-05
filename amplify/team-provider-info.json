@@ -1,15 +1,23 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-connectfast-dev-91217-authRole",
-      "UnauthRoleArn": "arn:aws:iam::953571919198:role/amplify-connectfast-dev-91217-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::953571919198:role/amplify-connectfast-dev-91217-authRole",
-      "Region": "eu-central-1",
-      "DeploymentBucketName": "amplify-connectfast-dev-91217-deployment",
-      "UnauthRoleName": "amplify-connectfast-dev-91217-unauthRole",
-      "StackName": "amplify-connectfast-dev-91217",
-      "StackId": "arn:aws:cloudformation:eu-central-1:953571919198:stack/amplify-connectfast-dev-91217/dd4b3de0-db04-11eb-9ab8-06b3fb26c106",
-      "AmplifyAppId": "d342o95qrari6h"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-connectfast-dev-91217-authRole",
+            "UnauthRoleArn": "arn:aws:iam::953571919198:role/amplify-connectfast-dev-91217-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::953571919198:role/amplify-connectfast-dev-91217-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-connectfast-dev-91217-deployment",
+            "UnauthRoleName": "amplify-connectfast-dev-91217-unauthRole",
+            "StackName": "amplify-connectfast-dev-91217",
+            "StackId": "arn:aws:cloudformation:eu-central-1:953571919198:stack/amplify-connectfast-dev-91217/dd4b3de0-db04-11eb-9ab8-06b3fb26c106",
+            "AmplifyAppId": "d342o95qrari6h"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d342o95qrari6h",
+                    "type": "manual"
+                }
+            }
+        }
     }
-  }
 }
